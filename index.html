@@ -1,70 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Easy orders</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+.cover {
+	background-image: url('./assets/landing-logo.png');
+	background-size: cover;
+	background-position: right top;
+	background-repeat: no-repeat;
+}
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+.page {
+  min-height: 100vh;
+}
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
+.highlight-container {
+	line-height: 3.5rem;	
+}
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" href="images/favicon.ico">
+.profile-img {
+  max-width: 20rem;
+}
+</style>
 
-</head>
-<body>
+<nav class="fixed-top navbar navbar-light bg-transparent navbar-expand justify-content-between">
+  <a class="navbar-brand text-capitalize" href="#">Easy orders</a>
+  <ul class="navbar-nav nav bg-light">
+    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="#contact">Join</a></li>
+  </ul>
+</nav>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="full-width columnt" style="margin-top: 10em">
-        <h1 style="text-align: center">Easy orders</h1>
-      </div>
+<div id="cover" class="container-fluid">
+  <div class="row cover page align-items-center">
+    <div class="col-md-5 align-self-center highlight-container">
+      <h3 class="p-2 h-3">Hey!</h3>
+      <h5 class="bg-warning p-2 d-inline h-5">We help enterprise clients to save time and money, increase revenue and client satisfaction by streamlining client communication and orders.</h5>
+      <div class="d-block"/>
+      <a class="btn btn-success" href="#about">How to decrease time spent on client communication</a>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="two-thirds column" style="margin-top: 10em">
-        <h2>Order. Track. Easy.</h2>
-        <ul>
-          <li>Create orders</li>
-          <li>Approve items</li>
-          <li>Map buyers and sellers product data</li>
-          <li>Order shipping</li>
-        </ul>
-        <p>Simple, yet efficient</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="two-thirds column u-pull-right" style="margin-top: 10em;">
-        <h2>This is how it works:</h2>
-        <iframe width="640" height="360" src="https://www.youtube.com/embed/k_d5jWvBirU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="row">
-      <div class="full-width column" style="margin-top: 10em; margin-bottom: 10em;">
-        <h1 style="text-align: center">Join revolution now!</h1>
-      </div>
+</div>
+<div id="about" class="container-fluid">
+  <div class="row page">
+    <div class="col-lg-7 mx-auto align-self-center">
+      <h1 class="display-4 text-center">Solving enterprise client communication</h1>
+      <p class="mt-4" width="1024" height="576">
+        <iframe width="1024" height="576" src="https://www.youtube.com/embed/k_d5jWvBirU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </p>
+      <a class="btn btn-outline-primary" href="#contact">Let's work together</a>
     </div>
   </div>
+</div>
+<div id="contact" class="container-fluid">
+  <div class="row page">
+    <div class="col-lg-7 mx-auto align-self-center">
+      <h1 class="display-4 text-center">Let us help you!</h1>
+      <form action="https://formspree.io/artur.bartkevic@gmail.com" method="POST">
+        <div class="form-group">
+          <input class="form-control" type="email" name="_replyto" placeholder="you@enterprise">
+        </div>
+        <div class="form-group">
+          <input type="hidden" name="_next" value="http://bartkevic.com">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
-</html>
+<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+<script type="text/javascript">
+Skype.ui({
+  "name": "call",
+  "element": "SkypeButton_Call_sanithemagnificent_1",
+  "participants": ["sanithemagnificent"],
+  "imageSize": 32
+});
+</script>
